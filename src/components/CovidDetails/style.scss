@@ -1,0 +1,84 @@
+$red: #f00;
+$green: green;
+$lightGreen: #008000a3;
+$lightRed: #ff00009e;
+$lightGrey: #000000bd;
+
+#covid-summary-container {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+
+    .global-summary{
+        width:400px;
+        margin-top: 30px;
+        >div {
+            // height: calc(100vh - 80px);
+        }
+        section {
+            margin: 20px 5px;
+            .newly-added{
+                color: $lightGrey
+            }
+        }
+        .s-green{
+            color: $green;
+            .newly-added{
+                color: $lightGreen;
+            }
+        }
+        .s-red {
+            color: $red;
+            .newly-added{
+                color: $lightRed
+            }
+        } 
+    }
+
+    .table-data {
+        margin-top: 30px;
+        width: 100%;
+        .tools {
+            display: flex;
+            flex-direction: row;
+
+            .refresh{
+                flex: 0 0 8%;
+                margin: auto;
+            }
+        }
+        .recovered{
+            color: $green;
+            font-weight: bold;
+        }
+        .new-recovered {
+            color: $lightGreen;
+            font-weight: bold;
+        }
+    
+        .confirmed{
+            color: $red;
+            font-weight: bold;
+        }
+        .new-confirmed{
+            color: $lightRed;
+            font-weight: bold;
+        }
+        .new-deaths{
+            color: $lightGrey;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #covid-summary-container {
+        flex-direction: column;
+        .global-summary{
+            width:100%;
+            >div {
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+$containerHeight: calc(100vh - 80px);
+
+#layout{
+    height:$containerHeight;
+}
+
+header {
+    min-height: 80px;
+    background-color: #2F8F9D;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    color: #B3E8E5;
+
+    .logo{
+        padding: 13px 10px;
+    }
+}
+
+main {
+    width: 100%;
+    height: $containerHeight;
+    background-color: #E7EBF0;
+}
+
+.text{
+    margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
