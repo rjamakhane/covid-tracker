@@ -4,12 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Divider } from '@mui/material';
 import moment from 'moment';
-import { CONSTANTS } from '../../constants'
-import { formatNumbers } from '../../util'
+import { CONSTANTS } from '../../../constants'
+import { formatNumbers } from '../../../util'
 import {
     shape
 } from 'prop-types';
-import './style.scss';
+import '../style.scss';
 
 const Summary = ({ globalInfo }) => {
 

@@ -27,9 +27,10 @@ const TableFilter = ({ searchFields, onFilter }) => {
   return (
     <Box
       component="form"
-      style={{padding: '20px 5px', flex: '1'}}
       sx={{
-        '& > :not(style)': { m: 1, width: '250px' },
+        padding: '20px 5px',
+        flex: '1',
+        '& > :not(style)': { margin: '8px', width: '250px' },
       }}
       noValidate
     >

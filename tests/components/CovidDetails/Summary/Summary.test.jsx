@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import Summary from '../../../src/components/CovidDetails/Summary';
-import { CONSTANTS } from '../../../src/constants'
+import Summary from '../../../../src/components/CovidDetails/Summary';
+import { CONSTANTS } from '../../../../src/constants'
 
 describe('Summary', () => {
   const props = {

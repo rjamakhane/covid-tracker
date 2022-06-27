@@ -101,7 +101,7 @@ const CovidTable = ({ covidData, fetchCovidData }) => {
 
     return (
         <Box sx={{ width: '100%', margin: "0px 5px" }}>
-            <Paper sx={{ width: '100%', mb: 2 }}>
+            <Paper sx={{ width: '100%', marginBottom: "16px" }} >
                 <div className="tools">
                     <TableFilter searchFields={items} onFilter={handleFilterItems} />
                     <div className="refresh">

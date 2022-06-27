@@ -21,9 +21,9 @@ export const stableSort = (array, comparator) => {
 }
 
 export const filterItems = (array, field, value) => {
-    return array.filter(item => {
+    return array.length ? array.filter(item => {
         return String(item[field]).toLowerCase().indexOf(value.toLowerCase()) >= 0
-    })
+    }): [];
 }
 
 export const formatNumbers = (value) => value ? value.toLocaleString() : 0
